@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Clone by Jit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://open.scdn.co/cdn/images/favicon.5cb2bd30.ico">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li class="home"><img src="home-icon.jpg" alt="Home"></li>
+            <li class="HomeTxt">Home</li>
+            <li class="home"><img src="podcast-icon.png" alt="podcasts"></li>
+            <li class="HomeTxt">Podcasts</li>
+            <li class="home"><img src="library-icon.png" alt="Lib"></li>
+            <li class="HomeTxt">Library</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="playlists">
+            <div>
+                <h1>Your frequent plays</h1>
+                <div class="colWrapper">
+                    <div class="wrapper">
+                        <div class="songItem " style="background-image: url(/covers/Top_Tollywood._.png);">
+                        </div>
+                        <div class="songItem" style="background-image:url(/covers/telugu-ss.jpg)">
+                        </div>
+                        <div class="songItem"style="background-image:url(/covers/all-hits.jpg)">
+                        </div>
+                        <div class="songItem"style="background-image:url(/covers/all-viral-hits.jpg)">
+                        </div>
+                        <div class="songItem"style="background-image:url(/covers/review-2021.jpg)">
+                        </div>
+                        <!-- <div class="songItem" style="background-image: url(/covers/my-discovery-music.jpg);">
+                        </div> -->
+                    </div>
+                    <div class="row">
+                        <div class="fadeIn">Top Tollywood</div>
+                        <div class="fadeIn">Telugu Soul Soothers</div>
+                        <div class="fadeIn">All hits</div>
+                        <div class="fadeIn">Viral hits</div>
+                        <div class="fadeIn">My year review 2021</div>
+                        <!-- <div>My discovery mix</div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h1>Hot right now</h1>
+                <div class="colWrapper">
+                    <div class="wrapper">
+                        <div class="songItem " style="background-image: url(https://m.media-amazon.com/images/I/515Wx1V0TVL._SX354_SY354_BL0_QL100__UX358_FMwebp_QL85_.jpg);">
+                        </div>
+                        <div class="songItem" style="background-image:url(https://m.media-amazon.com/images/I/81MLPEK2egL._UX56_FMwebp_QL85_.jpg?isCloudQueue=true)">
+                        </div>
+                        <div class="songItem"style="background-image:url(https://m.media-amazon.com/images/I/51fH1s0VwlL._SX354_SY354_BL0_QL100__UX358_FMwebp_QL85_.jpg)">
+                        </div>
+                        <div class="songItem"style="background-image:url(https://m.media-amazon.com/images/I/51py9vktRtL._SX354_SY354_BL0_QL100__UX358_FMwebp_QL85_.jpg)">
+                        </div>
+                        <div class="songItem"style="background-image:url(https://m.media-amazon.com/images/I/51jOESl2DpL._SX354_SY354_BL0_QL100__UX358_FMwebp_QL85_.jpg)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="fadeIn">Srivalli</div>
+                        <div class="fadeIn">Janani</div>
+                        <div class="fadeIn">Shershaah</div>
+                        <div class="fadeIn">Best of 2021 International</div>
+                        <div class="fadeIn">Best of Sid Sriram</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" class="slider" min="0" max="100">
+        <div class="icons">
+            <img src="repeat-icon.png" alt="" class="repeat">
+            <!-- fontawesome icons -->
+            <i class="fas fa-step-backward fa-3x"></i>
+            <i class="fas fa-play-circle fa-3x" id="play"></i>
+            <i class="fas fa-step-forward fa-3x"></i>
+            <i class="fas fa-random fa-3x"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8c632f0511.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: black;
+}
+/*  * means apply to all elements */
+*{ 
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+    border-bottom: 1px solid white;
+}
+nav ul{
+    display:flex;
+    background-color:black;
+    align-items:center;
+    list-style-type: none;
+    color: white;
+    height: 65px;
+    cursor: pointer;
+    /* justify-content: space-around; */
+}
+
+nav ul li{
+    padding: 0 40px;
+}
+.brand img{
+    width: 45px;
+    padding: 0px 8px;
+}
+
+.home img{
+    width: 35px;
+    padding-right: 0px !important;
+}
+
+.HomeTxt{
+    padding-left: 0px !important;
+    /* padding-right: ; */
+}
+
+.brand{
+    display: flex;
+    font-weight: bolder;
+    font-size: large;
+    align-items: center;
+}
+
+.container{
+    min-height: 82vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 99%;
+   /* border-radius: 12px; */
+   padding: 34px;
+   /* background-image: url('bg.jpg'); */
+   background-size:cover;
+}
+
+.bottom{
+    position:sticky;
+    bottom: 0;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction:column; 
+    justify-content:flex-start;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.repeat{
+    width: 45px;
+    height: 45px;
+}
+
+#myProgressBar{
+    width: 100vw;
+    cursor: pointer;
+}
+
+
+.wrapper{
+    height: 200px;
+    width: 1300px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    /* padding: 50px 0; */
+    align-items:center;
+    justify-content: space-around;
+    background-color: black;
+    color: black;
+}
+
+.songItem{
+    height: 180px;
+    width: 180px;
+    background-size: cover;
+    align-content: center;
+    /* cursor: pointer; */
+}
+
+.colWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.playlists{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.fadeIn:hover{
+    color: aqua;
+    cursor: pointer;
+}
