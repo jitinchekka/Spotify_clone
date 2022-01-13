@@ -7,4 +7,10 @@ let myProgressBar=document.getElementById('myProgressBar')
 // 	{songName="salaam-e-Ishq",filePath:"songs/2.mp3"}
 // ]
 // audioElement.play();
-myProgressBar.addEventListener('time')
+playButton.addEventListener('click',()=>{
+	if (audioElement.paused||audioElement.currentTime==0) {
+		audioElement.play
+		console.log('Playing')
+	}
+})
+// myProgressBar.addEventListener('time')
