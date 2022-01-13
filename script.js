@@ -13,7 +13,30 @@ playButton.addEventListener('click',()=>{
 	if (audioElement.paused||audioElement.currentTime==0) {
 		audioElement.play();
 		console.log('Playing');
+		playButton.classList.remove('fa-play-circle');
+		playButton.classList.add('fa-pause-circle');
 	}
+	else{
+		audioElement.pause();
+		playButton.classList.remove('fa-pause-circle');
+		play.classList.add('fa-play-circle');
+	}
+})
+
+document.addEventListener('keyup',event=>{
+	if (event.code=='Space') {
+		if (audioElement.paused||audioElement.currentTime==0) {
+			audioElement.play();
+			console.log('Playing');
+			playButton.classList.remove('fa-play-circle');
+			playButton.classList.add('fa-pause-circle');
+		}
+		else{
+			audioElement.pause();
+			playButton.classList.remove('fa-pause-circle');
+			play.classList.add('fa-play-circle');
+		}
+	} 
 })
 myProgressBar.addEventListener('timeupdate',()=>{
 	console.log('Time update')
