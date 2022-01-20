@@ -71,17 +71,29 @@ nav ul li{
     background-color: black;
     color: white;
     display: flex;
-    align-items: center;
+    align-items:center;
     flex-direction:column; 
     justify-content:flex-start;
 }
 
+
+#gif{
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+    align-self: center;
+}
+#masterSongName{
+   justify-self:center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   align-self: center;
+}
 .icons{
     display: flex;
     flex-direction: row;
     padding-top: 15px;
     justify-content: space-between;
     gap: 20px;
+    padding-right: 300px;
 }
 
 .repeat{
@@ -116,6 +128,10 @@ nav ul li{
     /* cursor: pointer; */
 }
 
+.songInfo{
+    color: white;
+
+}
 .colWrapper{
     display: flex;
     flex-direction: column;
