@@ -41,6 +41,10 @@ nav ul li{
 .HomeTxt{
     padding-left: 0px !important;
     /* padding-right: ; */
+    transition: color 0.5s;
+}
+.HomeTxt:hover{
+    color: aqua;
 }
 
 .brand{
@@ -126,6 +130,12 @@ nav ul li{
     background-size: cover;
     align-content: center;
     /* cursor: pointer; */
+}
+
+.songItem:hover{
+    opacity: 0.5;
+    cursor: pointer;
+
 }
 
 .songInfo{
