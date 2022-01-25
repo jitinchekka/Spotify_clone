@@ -18,6 +18,7 @@ playButton.addEventListener('click',()=>{
 	}
 	else{
 		audioElement.pause();
+		console.log('Paused');
 		playButton.classList.remove('fa-pause-circle');
 		play.classList.add('fa-play-circle');
 	}
@@ -38,6 +39,10 @@ document.addEventListener('keyup',event=>{
 		}
 	} 
 })
-myProgressBar.addEventListener('timeupdate',()=>{
-	console.log('Time update')
+
+audioElement.addEventListener('timeupdate',()=>{
+	console.log('Time Update');
+	progress= parseInt((audioElement.currentTime/audioElement.duration)*100);
+	console.log(progress);
+	myProgressBar.value=progress;
 })
